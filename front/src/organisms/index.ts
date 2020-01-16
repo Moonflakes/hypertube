@@ -1,0 +1,9 @@
+export { default as VideoPlayer } from './VideoPlayer';
+export { default as AuthForm } from './AuthForm';
+export { default as Header } from './Header';
+export { default as SearchFilters } from './SearchFilters';
+export { default as MoviesGrid } from './MoviesGrid';
+export { default as MovieHeader } from './MovieHeader';
+export { default as Footer } from './Footer';
+export { default as PersonList } from './PersonList';
+export { default as CommentList } from './CommentList'

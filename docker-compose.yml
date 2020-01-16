@@ -1,0 +1,70 @@
+version: '3'
+networks:
+  hypertube:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/24
+services:
+  neo4j:
+    user: "neo4j:neo4j"
+    image: "neo4j:latest"
+    ports:
+    - "7474:7474"
+    - "7687:7687"
+    volumes:
+    - neo4j_hypertube_data:/data
+    - neo4j_hypertube_logs:/logs
+    - neo4j_hypertube_import:/var/lib/neo4j/import
+    - neo4j_hypertube_plugins:/plugins
+    env_file:
+      - ./neo4j.env
+    networks:
+      hypertube:
+        ipv4_address: 172.20.0.5
+  api:
+    image: node:latest
+    ports:
+    - "4000:4000"
+    volumes:
+      - ./api:/usr/src/api
+      - node_modules_hypertube_api:/usr/src/api/node_modules
+    working_dir: /usr/src/api
+    env_file:
+      - ./api/.env
+    command: bash -c "apt-get update && apt-get install ffmpeg -y && npm install -f && npm run watch"
+    depends_on:
+      - neo4j
+    networks:
+      hypertube:
+        ipv4_address: 172.20.0.6
+  front:
+    image: node:latest
+    ports:
+    - "3000:3000"
+    - "35729:35729"
+    - "6060:6060"
+    env_file:
+      - ./front/.env
+    volumes:
+      - ./front:/usr/src/front
+      - node_modules_hypertube_front:/usr/src/front/node_modules
+    working_dir: /usr/src/front
+    command: bash -c "npm install --unsafe-perm && npm start"
+    networks:
+      hypertube:
+          ipv4_address: 172.20.0.8
+  cache:
+    image: redis:latest
+    volumes:
+      - hypertube_cache:/data
+    networks:
+      hypertube:
+        ipv4_address: 172.20.0.9
+volumes:
+  node_modules_hypertube_api:
+  node_modules_hypertube_front:
+  hypertube_cache:
+  neo4j_hypertube_data:
+  neo4j_hypertube_logs:
+  neo4j_hypertube_import:
+  neo4j_hypertube_plugins:

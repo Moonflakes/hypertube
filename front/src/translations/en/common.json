@@ -1,0 +1,72 @@
+{
+    "formErrors": {
+        "any": {
+            "empty": "This field is required.",
+            "unique": "{{field}} is already taken.",
+            "email": "This is not a valid email address.",
+            "password": "Minimum 8 characters, one uppercase, one lowercase, one number and one special character.",
+            "password-not-equal": "The two passwords are different.",
+            "password-invalid": "<1>Incorrect password</1>. Please try again or you can <2>reset your password.</2>",
+            "user-not-found": "Sorry, we can't find an account with this email address. Please try again or <1>create a new account.</2>"
+        },
+        "field": {
+            "username": "This username",
+            "email": "This email"
+        },
+        "avatar": "You must select a avatar."
+    },
+    "successSignup": "<0>Successful registration</0>. You can now <1>signin here.</1>",
+    "successResetPwd": "<0>Successful reset</0>. You can now <1>signin here.</1>",
+    "successResetSend": "<0>Successful send</0>. Check your email box for the reset link.",
+    "successUpdateInfos": "<0>Your {{ name }} has been updated</0>.",
+    "example": "This is a example of usage",
+    "play": "play",
+    "my-list": "my list",
+    "firstname": "firstname",
+    "lastname": "lastname",
+    "account": "account",
+    "signup": "sign up",
+    "signin": "sign in",
+    "reset": "reset",
+    "reset-pwd": "change your password",
+    "update": "update",
+    "email": "email",
+    "new-email": "new email",
+    "username": "username",
+    "new-username": "new username",
+    "password": "password",
+    "password-confirm": "confirmation",
+    "need-help": "need help ?",
+    "type-here-search": "type here...",
+    "alpha,asc-sort-filter": "name",
+    "user_rating,desc-sort-filter": "rating",
+    "year,desc-sort-filter": "year",
+    "title-sort-filter": "sort by:",
+    "title-genre-filter": "genre:",
+    "title-slider-filter": "filter:",
+    "imdb-grade-slider": "imdb grade",
+    "production-year-slider": "production year",
+    "social": "Login with {{ variant }}",
+    "language": {
+        "fr-FR": "Français",
+        "en-EN": "English",
+        "it-IT": "Italiano"
+    },
+    "copyright": "© 2019 Hypertube, Inc.",
+    "search": "Movie title",
+    "show-more-avatars": "Click for display all avatars",
+    "hide-more-avatars": "Close avatars library",
+    "send-comment": "send comment",
+    "cast": "cast",
+    "directors": "directors",
+    "writers": "writers",
+    "comment-placeholder": "Type your comment here",
+    "stream": {
+        "goBack": "Go back to {{from}}",
+        "movieDetails": "movie Details",
+        "search": "on search page"
+    },
+    "recently-added": "Recently added",
+    "watch-again": "Watch again",
+    "top-rated-movies": "Top rated movies"
+}

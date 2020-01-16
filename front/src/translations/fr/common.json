@@ -1,0 +1,73 @@
+{
+    "formErrors": {
+        "any": {
+            "empty": "Ce champs est requis.",
+            "unique": "{{field}} est déja pris.",
+            "email": "Cet adresse e-mail est invalide.",
+            "password": "Minimum 8 caractères, une majuscule, une majuscule, un nombre et caratère spécial.",
+            "password-not-equal": "Les deux mots de passe sont différents.",
+            "password-invalid": "<1>Mot de passe incorrect</1>. Réessayez ou bien <2>réinitialisez votre mot de passe.</2>",
+            "user-not-found": "Nous sommes désolé, nous ne trouvons pas de compte associé à cette adresse email. Veuillez réessayer ou <1>créer un nouveau compte.</2>"
+        },
+        "field": {
+            "username": "Ce nom d'utilisateur",
+            "email": "Cette adresse e-mail"
+        },
+        "avatar": "Vous devez sélectionner un avatar."
+    },
+    "successSignup": "<0>Votre inscrition a bien été effectué</0>. Vous pouvez maintenant <1>vous connecter ici.</1>",
+    "successResetPwd": "<0>Votre mot de passe a bien été modifié</0>. Vous pouvez maintenant <1>vous connecter ici.</1>",
+    "successResetSend": "<0>Un email vous a été envoyé</0>. Vous y trouverez un lien pour réinitiliser votre mot de passe. Veuillez vérifier votre boîte de réception.",
+    "successUpdateInfos": "<0>Votre {{ name }} a bien été modifié</0>.",
+    "example": "Ceci est un exemple d'usage",
+    "play": "lecture",
+    "my-list": "ma liste",
+    "firstname": "prénom",
+    "lastname": "nom",
+    "account": "compte",
+    "signup": "s'inscrire",
+    "signin": "s'identifier",
+    "reset": "réinitialisation",
+    "reset-pwd": "changer votre mot de passe",
+    "update": "mettre à jour vos informations",
+    "email": "adresse e-mail",
+    "new-email": "nouvelle adresse e-mail",
+    "username": "nom d'utilisateur",
+    "new-username": "nouveau nom d'utilisateur",
+    "password": "mot de passe",
+    "password-confirm": "confirmation",
+    "need-help": "besoin d'aide ?",
+    "type-here-search": "cliquer ici...",
+    "name-sort-filter": "nom",
+    "rating-sort-filter": "score",
+    "year-sort-filter": "année",
+    "title-sort-filter": "trier par:",
+    "title-genre-filter": "genre:",
+    "title-slider-filter": "filtre:",
+    "imdb-grade-slider": "imdb grade",
+    "production-year-slider": "année de production",
+    "social": "Connection avec {{ variant }}",
+    "new-password": "nouveau mot de passe",
+    "language": {
+        "fr-FR": "Français",
+        "en-EN": "English",
+        "it-IT": "Italiano"
+    },
+    "copyright": "© 2019 Hypertube, Inc.",
+    "search": "Titre du film",
+    "show-more-avatars": "Cliquer pour afficher tous les avatars",
+    "hide-more-avatars": "Fermer la librairie d'avatars",
+    "send-comment": "commenter",
+    "cast": "acteurs",
+    "directors": "directeurs",
+    "writers": "auteurs",
+    "comment-placeholder": "Écrivez votre commentaire ici",
+    "stream": {
+        "goBack": "Retourner {{from}}",
+        "movieDetails": "aux Détails du film",
+        "search": "sur la page de recherche"
+    },
+    "recently-added": "Récemment ajouté",
+    "watch-again": "Regarder encore",
+    "top-rated-movies": "Films les mieux notés"
+}
